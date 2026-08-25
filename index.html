@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#050914">
+  <title>SNIPER AI — AI • Бизнес • Цифровые решения</title>
+  <meta name="description" content="SNIPER AI — персональный AI-помощник, услуги, реставрация фото, переводы и партнёрские предложения.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="snow" aria-hidden="true"></div>
+  <header class="header">
+    <a class="logo" href="#home"><span class="target">◉</span> SNIPER <b>AI</b></a>
+    <nav>
+      <a href="#home">Главная</a><a href="#about">Обо мне</a><a href="#services">Услуги</a>
+      <a href="#partners">Партнёры</a><a href="#contacts">Контакты</a><a href="#chat">AI Чат</a>
+    </nav>
+    <div class="langs"><button data-lang="ru">RU</button><button data-lang="kz">KZ</button><button data-lang="en">EN</button></div>
+    <button class="menu" id="menuBtn">☰</button>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-photo">
+        <div class="photo-ring"><img src="assets/director.png" alt="Сергей Санников — директор SNIPER AI"></div>
+        <div class="status">● AI • 24/7</div>
+      </div>
+      <div class="hero-copy">
+        <p class="eyebrow">ДОБРО ПОЖАЛОВАТЬ В</p>
+        <h1>SNIPER <span>AI</span></h1>
+        <h2>Ваш персональный помощник<br>для бизнеса, покупок и решений</h2>
+        <div class="chips"><span>🤖 AI помощник 24/7</span><span>🛒 Партнёрские предложения</span><span>🛡 Проверенные услуги</span><span>⚡ Быстро и надёжно</span></div>
+        <div class="actions"><a class="btn primary" href="#services">Перейти к услугам</a><a class="btn ghost" href="#chat">Открыть AI чат</a></div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div><p class="eyebrow">ОБО МНЕ</p><h2>Сергей Санников</h2><p>AI • бизнес • цифровые решения. Помогаю решать практические задачи: от реставрации старых фотографий и переводов до поиска товаров, консультаций и цифровых инструментов для бизнеса.</p></div>
+      <div class="stats"><div><b id="views">0</b><span>просмотров</span></div><div><b>24/7</b><span>AI-помощник</span></div><div><b>3</b><span>языка</span></div></div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="section-title"><p class="eyebrow">ЧТО Я ДЕЛАЮ</p><h2>Мои услуги</h2></div>
+      <div class="cards">
+        <article class="card"><i>🖼️</i><h3>Реставрация фото</h3><p>Старые, повреждённые и выцветшие фотографии. Улучшение качества, цвета и деталей.</p><strong>от 1 500 ₸</strong><a href="#photo-lab">Загрузить фото →</a></article>
+        <article class="card"><i>🌐</i><h3>Переводы</h3><p>Русский ↔ казахский ↔ английский. Быстрый перевод текста и помощь с формулировками.</p><strong>от 1 500 ₸</strong><a href="#translator">Открыть переводчик →</a></article>
+        <article class="card"><i>🤖</i><h3>AI-консультации</h3><p>Поиск решений, автоматизация, идеи, тексты, анализ задач и внедрение AI-инструментов.</p><strong>по запросу</strong><a href="#chat">Спросить AI →</a></article>
+        <article class="card"><i>🛍️</i><h3>Подбор товаров</h3><p>Поиск, сравнение характеристик и рекомендации перед покупкой.</p><strong>по запросу</strong><a href="#partners">Смотреть предложения →</a></article>
+        <article class="card"><i>💼</i><h3>Цифровые решения</h3><p>Сайты, лендинги, AI-инструменты и автоматизация под конкретную задачу бизнеса.</p><strong>по запросу</strong><a href="#contacts">Обсудить задачу →</a></article>
+        <article class="card"><i>💬</i><h3>Консультации</h3><p>Разбор задачи и практический план действий без лишней теории.</p><strong>по запросу</strong><a href="#contacts">Связаться →</a></article>
+      </div>
+    </section>
+
+    <section id="photo-lab" class="section tool-panel">
+      <div><div class="section-title"><p class="eyebrow">PHOTO LAB</p><h2>Реставрация фотографии</h2><p>Выберите фото — получите предварительный просмотр и отправьте заявку на профессиональную обработку.</p></div>
+      <label class="upload"><input id="photoInput" type="file" accept="image/*"><span>📷 Выбрать фотографию</span></label><div id="photoPreview" class="preview">Здесь появится выбранная фотография</div>
+      <button id="restoreBtn" class="btn primary">Запросить реставрацию</button></div>
+    </section>
+
+    <section id="translator" class="section tool-panel">
+      <div class="section-title"><p class="eyebrow">AI TRANSLATOR</p><h2>Переводчик</h2><p>Перевод между русским, казахским и английским с помощью AI.</p></div>
+      <div class="translator-grid"><textarea id="trText" placeholder="Введите текст..."></textarea><textarea id="trOut" readonly placeholder="Перевод появится здесь..."></textarea></div>
+      <div class="selects"><select id="from"><option value="ru">Русский</option><option value="kz">Қазақша</option><option value="en">English</option></select><span>→</span><select id="to"><option value="en">English</option><option value="kz">Қазақша</option><option value="ru">Русский</option></select><button id="translateBtn" class="btn primary">Перевести</button></div>
+    </section>
+
+    <section id="chat" class="section chat-section">
+      <div class="section-title"><p class="eyebrow">AI ASSISTANT</p><h2>AI-Помощник Сергея Санникова</h2><p>Поиск товаров • Реставрация • Перевод • Консультации</p></div>
+      <div class="chatbox"><div id="messages" class="messages"><div class="msg ai">Здравствуйте! Я AI-Помощник Сергея Санникова. Чем могу помочь?</div></div>
+        <div class="quick"><button>Поиск товаров</button><button>Реставрация</button><button>Перевод</button><button>Консультация</button></div>
+        <form id="chatForm"><input id="chatInput" autocomplete="off" placeholder="Напишите ваш вопрос..."><button>➤</button></form>
+      </div>
+    </section>
+
+    <section id="partners" class="section">
+      <div class="section-title"><p class="eyebrow">SHOPPING</p><h2>Лучшие предложения от партнёров</h2><p>Ссылки собраны в одном месте. Если у вас есть персональные affiliate-ссылки, замените их в <code>public/partners.js</code>.</p></div>
+      <div id="partnersGrid" class="partners"></div>
+    </section>
+
+    <section id="contacts" class="section contacts">
+      <div><p class="eyebrow">КОНТАКТЫ</p><h2>Связаться со мной</h2><p>Обсудим задачу и подберём подходящее решение.</p></div>
+      <div class="contact-buttons"><a href="tel:+77474701201">📞 Позвонить</a><a href="https://wa.me/77474701201" target="_blank" rel="noopener">🟢 WhatsApp</a><a href="https://t.me/sniperssaai" target="_blank" rel="noopener">✈️ Telegram</a><a href="mailto:sniperssa282896@gmail.com">✉️ Email</a></div>
+    </section>
+  </main>
+
+  <footer>© 2026 SNIPER AI • AI • Бизнес • Цифровые решения <span id="traffic"></span></footer>
+  <div id="toast"></div>
+  <script src="partners.js"></script><script src="app.js"></script>
+</body>
+</html>
